@@ -97,11 +97,6 @@ birthday-music.mp3 is used after the countdown unlocks the birthday page.
 
 If you use different filenames, update the audio paths in index.html.
 
-Example:
-
-<source src="audio/birthday-music.mp3" type="audio/mpeg">
-
-
 ## 🎨 Change the Design
 
 Open style.css.
