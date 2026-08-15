@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For You ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="particles"></div>
+
+  <!-- WAITING / COUNTDOWN PAGE -->
+  <section id="waiting" class="screen active">
+
+    <div class="moon-glow"></div>
+
+    <div class="waiting-content">
+
+      <div class="tiny-label"></div>
+
+      <!-- COLD LINE -->
+      <div class="cold-line">
+        The time of year when the <em>air turns cold.</em>
+      </div>
+
+      <div class="lock-orbit">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="lock-heart">♡</div>
+      </div>
+
+      <p class="waiting-kicker"> ... ✦</p>
+
+      <h1 class="waiting-title">
+        Another year around the sun.
+      </h1>
+
+      <p class="waiting-sub">
+        Come back when the little timer reaches zero ♡
+      </p>
+
+      <div class="countdown">
+
+        <div>
+          <strong id="days">00</strong>
+          <span>days</span>
+        </div>
+
+        <div>
+          <strong id="hours">00</strong>
+          <span>hours</span>
+        </div>
+
+        <div>
+          <strong id="minutes">00</strong>
+          <span>minutes</span>
+        </div>
+
+        <div>
+          <strong id="seconds">00</strong>
+          <span>seconds</span>
+        </div>
+
+      </div>
+
+      <div class="waiting-date">
+        20 August · 11:59 PM
+      </div>
+
+      <button
+        id="waitingMusicBtn"
+        class="music-pill music-attention"
+      >
+
+        <span class="music-bars">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+
+        <span id="waitingMusicLabel">
+          Play music
+        </span>
+
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- AUTOPLAY FALLBACK -->
+  <div id="startOverlay" class="start-overlay">
+
+    <div class="start-card">
+
+      <span class="start-sparkle">✦</span>
+
+      <h2></h2>
+
+      <button id="startBtn"></button>
+
+    </div>
+
+  </div>
+
+
+  <!-- WAITING MUSIC -->
+  <audio id="waitingAudio" loop preload="auto">
+    <source
+      src="audio/waiting-music.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <!-- BIRTHDAY MUSIC -->
+  <audio id="birthdayAudio" loop preload="auto">
+    <source
+      src="audio/birthday-music.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <!-- BIRTHDAY STORY -->
+  <main id="story" class="story">
+
+
+    <!-- OLDER -->
+    <section class="scene scene-photo" id="older">
+
+      <div class="scene-glow"></div>
+
+      <div class="photo-intro">
+
+        <div class="mini-label"></div>
+
+        <h2>
+          Someone is getting<br>
+          <span>older...</span>
+        </h2>
+
+        <p class="soft-line">😂</p>
+
+        <div class="hero-photo">
+
+          <img
+            src="images/older.jpeg"
+            alt="Your photo"
+          >
+
+          <div class="photo-ring"></div>
+
+        </div>
+
+        <button
+          class="next-button"
+          data-next="instant"
+        >
+          7,305 days →Level 20✦
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- INSTANT -->
+    <section class="scene scene-instant" id="instant">
+
+      <div class="instant-card">
+
+        <div class="instant-top">
+
+          <span class="avatar-dot"></span>
+
+          <span>just dropped</span>
+
+          <span class="three-dots">•••</span>
+
+        </div>
+
+        <div class="instant-photo">
+
+          <img
+            src="images/instant.jpeg"
+            alt="Birthday photo"
+          >
+
+          <div class="photo-placeholder">
+            Replace instant.jpg
+          </div>
+
+          <div class="instant-hearts">
+            ♡ ♡ ♡
+          </div>
+
+        </div>
+
+        <div class="instant-actions">
+          ♡ &nbsp; ♧ &nbsp; ↗
+        </div>
+
+        <h3>
+          It's...<em>your birthday?</em>
+        </h3>
+
+        <p>
+          Well, this calls for a celebration.
+        </p>
+
+      </div>
+
+      <button
+        class="next-button floating-next"
+        data-next="cake"
+      >
+        →
+      </button>
+
+    </section>
+
+
+    <!-- CAKE -->
+    <section class="scene scene-cake" id="cake">
+
+      <div class="celebration-bg"></div>
+
+      <div class="balloon balloon-one">♡</div>
+      <div class="balloon balloon-two">✦</div>
+      <div class="balloon balloon-three">♡</div>
+      <div class="balloon balloon-four">✦</div>
+
+
+      <div class="cake-wrap">
+
+        <div class="cake-glow"></div>
+
+        <div class="cake">
+
+          <div class="candle">
+            <span></span>
+          </div>
+
+          <div class="icing"></div>
+
+          <div class="cake-body"></div>
+
+          <div class="cake-plate"></div>
+
+        </div>
+
+        <div class="cake-sparkles">
+          ✦　♡　✦
+        </div>
+
+      </div>
+
+
+      <h2 class="birthday-burst">
+        HAPPY<br>
+        <span>BIRTHDAY</span> ♡
+      </h2>
+
+      <p class="cake-sub">
+        today is officially about you.
+      </p>
+
+      <button
+        class="next-button"
+        data-next="wish"
+      >
+      </button>
+
+    </section>
+
+
+    <!-- WISH -->
+    <section class="scene scene-wish" id="wish">
+
+      <div class="wish-layout">
+
+
+        <div class="wish-copy">
+
+          <div class="mini-label"></div>
+
+          <h2>
+            A little birthday<br>
+            <span>wish for you.</span>
+          </h2>
+
+
+          <div class="wish-message">
+
+            <p>
+              Happy birthday. I hope this year brings you beautiful memories, happiness, and plenty of reasons to smile.
+            </p>
+
+            <p>
+              May the days ahead bring you closer to everything you want, peaceful moments when you need them, and experiences worth remembering.
+            </p>
+
+            <p>
+              Keep being yourself, keep moving forward, and make this year one worth looking back on. ♡
+            </p>
+
+          </div>
+
+
+          <p class="signature">
+            with lots of love ♡
+          </p>
+
+        </div>
+
+
+        <div class="cube-stage">
+
+          <div class="cube-shadow"></div>
+
+          <div class="cube" id="cube">
+
+            <div class="cube-face face-front">
+
+              <img
+                src="images/photo1.jpeg"
+                alt="Memory 1"
+              >
+
+            </div>
+
+
+            <div class="cube-face face-right">
+
+              <img
+                src="images/photo2.jpeg"
+                alt="Memory 2"
+              >
+
+            </div>
+
+
+            <div class="cube-face face-left">
+
+              <img
+                src="images/photo3.jpeg"
+                alt="Memory 3"
+              >
+
+            </div>
+
+          </div>
+
+
+          <p class="cube-hint">
+            ♡
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="scene scene-final" id="final">
+
+      <div class="final-stars">
+        ✦　♡　✦　♡　✦
+      </div>
+
+      <h2>
+        Once again...
+      </h2>
+
+      <h1>
+        Happy Birthday ♡
+      </h1>
+
+      <p>
+        This year will bring you more happiness and joy.
+      </p>
+
+
+      <div class="final-photo">
+
+        <img
+          src="images/final.jpeg"
+          alt="Final birthday photo"
+        >
+
+        <div class="photo-placeholder">
+          Replace final.jpeg
+        </div>
+
+      </div>
+
+
+      <div class="final-heart">
+        ♡
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- SMALL MUSIC CONTROL -->
+  <div id="musicControl" class="music-control hidden">
+
+    <button
+      id="musicToggle"
+      aria-label="Music control"
+    >
+      ♪
+    </button>
+
+    <span id="musicStatus">
+      Birthday music
+    </span>
+
+  </div>
+
+
+  <div id="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

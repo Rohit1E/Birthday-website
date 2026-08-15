@@ -1,0 +1,3 @@
+Put these two files in this folder:
+1. waiting-music.mp3  -> music during countdown
+2. birthday-music.mp3 -> music after countdown

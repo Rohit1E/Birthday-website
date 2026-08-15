@@ -1,0 +1,8 @@
+Put your photos in this folder using these names:
+older.jpg
+instant.jpg
+photo1.jpg
+photo2.jpg
+photo3.jpg
+final.jpg
+Or change the filenames in script.js.
