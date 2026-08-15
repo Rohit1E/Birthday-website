@@ -77,11 +77,6 @@ final.jpeg
 
 If you use different filenames, update the corresponding image path in index.html.
 
-Example:
-
-<img src="images/older.jpeg">
-
-
 ## 🎵 Change the Music
 
 Open the audio folder.
